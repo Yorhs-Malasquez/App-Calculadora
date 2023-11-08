@@ -1,0 +1,333 @@
+:root {
+    --font: "Roboto", sans-serif;
+
+    /*Theme 1*/
+    --theme-1-body: hsl(222, 26%, 31%);
+    --theme-1-bg-toggle: hsl(223, 31%, 20%);
+    --theme-1-bg-display: hsl(224, 36%, 15%);
+    --theme-1-screen-text: white;
+    --theme-1-btn-reset-bg: hsl(225, 21%, 49%);
+    --theme-1-btn-reset-shadow: hsl(224, 28%, 35%);
+    --theme-1-btn-reset-hover: hsl(224, 51%, 76%);
+    --theme-1-btn-igual-bg: hsl(6, 63%, 50%);
+    --theme-1-btn-igual-hover: hsl(6, 93%, 67%);
+    --theme-1-btn-igual-shadow: hsl(6, 70%, 34%);
+    --theme-1-bg-button: hsl(30, 25%, 89%);
+    --theme-1-btn-shadow: hsl(28, 16%, 65%);
+    --theme-1-btn-hover: white;
+    /* --theme-1-btn-text: hsl(221, 14%, 31%);
+    --theme-1-equal-text: white;
+    --theme-1-body-text: white; */
+
+
+    /*Theme 2*/
+    --theme-2-body: hsl(0, 0%, 90%);
+    --theme-2-bg-toggle: hsl(0, 5%, 81%);
+    --theme-2-bg-display: hsl(0, 0%, 93%);
+    --theme-2-screen-text: hsl(60, 10%, 19%);
+    --theme-2-btn-reset-bg: hsl(185, 42%, 37%);
+    --theme-2-btn-reset-shadow: hsl(185, 58%, 25%);
+    --theme-2-btn-reset-hover: hsl(186, 41%, 56%);
+    --theme-2-btn-igual-bg: hsl(25, 98%, 40%);
+    --theme-2-btn-igual-hover: hsl(25, 100%, 61%);
+    --theme-2-btn-igual-shadow: hsl(25, 99%, 27%);
+    --theme-2-bg-button: hsl(45, 7%, 89%);
+    --theme-2-btn-shadow: hsl(35, 11%, 61%);
+    --theme-2-btn-hover: white;
+
+    /*Theme 3*/
+    --theme-3-body: hsl(268, 75%, 9%);
+    --theme-3-bg-toggle: hsl(268, 71%, 12%);
+    --theme-3-bg-display: hsl(268, 71%, 12%);
+    --theme-3-screen-text: hsl(52, 100%, 62%);
+    --theme-3-btn-reset-bg: hsl(281, 89%, 26%);
+    --theme-3-btn-reset-shadow: hsl(285, 91%, 52%);
+    --theme-3-btn-reset-hover: hsl(280, 56%, 44%);
+    --theme-3-btn-igual-bg: hsl(176, 100%, 44%);
+    --theme-3-btn-igual-hover: hsl(176, 100%, 79%);
+    --theme-3-equal-shadow: hsl(177, 92%, 70%);
+    --theme-3-bg-button: hsl(268, 47%, 21%);
+    --theme-3-btn-shadow: hsl(290, 70%, 36%);
+    --theme-3-btn-hover: hsl(267, 53%, 44%);
+
+    /*Default Theme Variables*/
+
+    --body: var(--theme-1-body);
+    --bg-toggle: var(--theme-1-bg-toggle);
+    --bg-display: var(--theme-1-bg-display);
+    --screen-text: var(--theme-1-screen-text);
+    --btn-reset-bg: var(--theme-1-btn-reset-bg);
+    --btn-reset-shadow: var(--theme-1-btn-reset-shadow);
+    --btn-reset-hover: var(--theme-1-btn-reset-hover);
+    --btn-igual-bg: var(--theme-1-btn-igual-bg);
+    --btn-igual-hover: var(--theme-1-btn-igual-hover);
+    --btn-igual-shadow: var(--theme-1-btn-igual-shadow);
+    --bg-button: var(--theme-1-bg-button);
+    --btn-shadow: var( --theme-1-btn-shadow);
+    --btn-hover: var(--theme-1-btn-hover);
+
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 1.2;
+    font-family: var(--font);
+    color: var(--screen-text);
+    background-color: var(--body);
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 900;
+    margin: 2rem 0;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.calculator {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.title {
+    background-color: var(--body);
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.themeHeader {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 28px;
+    text-transform: uppercase;
+}
+
+.themeHeader small {
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-right: -2px;
+    margin-bottom: 5px;
+}
+
+.themeHeader form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 71px;
+}
+
+.themeHeader form .themeNum {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+/*Checkbox Styling*/
+
+#themeThumb {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    border-radius: 50px;
+}
+
+input[type="radio"] {
+    -webkit-appearance: none;
+    width: 16px;
+    height: 16px;
+    outline: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/*Thumb Style*/
+
+input[name="theme"]:checked {
+    background: var(--btn-igual-bg);
+}
+
+input[name="theme"]:checked:hover {
+    background: var(--btn-igual-hover);
+}
+
+/*Track Style*/
+
+#themeThumb {
+    background: var(--bg-toggle);
+}
+
+.visuallyHidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+
+
+.display {
+    background-color: var(--bg-display);
+    width: 40%;
+    text-align: right;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    overflow: hidden;
+    padding-right: 2rem;
+}
+
+.numbers {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: var(--bg-toggle);
+    width: 40%;
+    padding: 1rem 1rem;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.btn-calc {
+    width: 80px;
+    height: 50px;
+    background-color: var(--bg-button);
+    cursor: pointer;
+    font-family: var(--font);
+    font-size: 2.5rem;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 3px var(--btn-shadow);
+    margin: 1rem 1rem;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.btn-calc:hover {
+    background-color: var(--btn-hover);
+}
+
+.op {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.btn-inferior {
+    width: 50%;
+    color: var(--screen-text);
+}
+
+.btn-azul {
+    background-color: var(--btn-reset-bg);
+    box-shadow: 0 3px var(--btn-reset-shadow);
+    color: var(--theme-1-screen-text);
+}
+
+.btn-azul:hover {
+    background-color: var(--btn-reset-hover);
+}
+
+#btn-igual {
+    background-color: var(--btn-igual-bg);
+    box-shadow: 0 3px var(--btn-igual-shadow);
+}
+
+#btn-igual:hover {
+    background-color: var(--btn-igual-hover);
+}
+/*Theme 2*/
+[data-theme="light"] {
+    --body: var(--theme-2-body);
+    --bg-toggle: var(--theme-2-bg-toggle);
+    --bg-display: var(--theme-2-bg-display);
+    --screen-text: var(--theme-2-screen-text);
+    --btn-reset-bg: var(--theme-2-btn-reset-bg);
+    --btn-reset-shadow: var(--theme-2-btn-reset-shadow);
+    --btn-reset-hover: var(--theme-2-btn-reset-hover);
+    --btn-igual-bg: var(--theme-2-btn-igual-bg);
+    --btn-igual-hover: var(--theme-2-btn-igual-hover);
+    --btn-igual-shadow: var(--theme-2-equal-shadow);
+    --bg-button: var(--theme-2-bg-button);
+    --btn-shadow: var(--theme-2-btn-shadow);
+    --btn-hover: var(--theme-2-btn-hover);
+}
+
+
+/*Theme 3*/
+
+[data-theme="purple"] {
+    --body: var(--theme-3-body);
+    --bg-toggle: var(--theme-3-bg-toggle);
+    --bg-display: var(--theme-3-bg-display);
+    --screen-text: var(--theme-3-screen-text);
+    --btn-reset-bg: var(--theme-3-btn-reset-bg);
+    --btn-reset-shadow: var(--theme-3-btn-reset-shadow);
+    --btn-reset-hover: var(--theme-3-btn-reset-hover);
+    --btn-igual-bg: var(--theme-3-btn-igual-bg);
+    --btn-igual-hover: var(--theme-3-btn-igual-hover);
+    --btn-igual-shadow: var(--theme-3-equal-shadow);
+    --bg-button: var(--theme-3-bg-button);
+    --btn-shadow: var(--theme-3-btn-shadow);
+    --btn-hover: var(--theme-3-btn-hover);
+
+}

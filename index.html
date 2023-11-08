@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Calculator app</title>
+  <script src="theme.js"></script>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+
+<body>
+  <div class="container">
+    <div class="calculator container">
+
+      <div class="title">
+        <h2>Calc</h2>
+        <div class="themeHeader">
+          <small>Theme</small>
+          <form>
+            <label class="themeNum"><span>1</span><span>2</span><span>3</span></label>
+            <div id="themeThumb">
+              <label for="dark" class="visuallyHidden">Dark Theme</label>
+              <input type="radio" value="dark" id="dark" name="theme" checked>
+              <label for="light" class="visuallyHidden">Light Theme</label>
+              <input type="radio" value="light" id="light" name="theme">
+              <label for="purple" class="visuallyHidden">Purple Theme</label>
+              <input type="radio" value="purple" id="purple" name="theme">
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="display">
+        <h2 id="display-num">0</h2>
+      </div>
+      <div class="numbers" id="numbers">
+        <button id="btn-7" class="btn-calc">7</button>
+        <button id="btn-8" class="btn-calc">8</button>
+        <button id="btn-9" class="btn-calc">9</button>
+        <button id="btn-del" class="btn-calc btn-azul">DEL</button>
+        <button id="btn-4" class="btn-calc">4</button>
+        <button id="btn-5" class="btn-calc">5</button>
+        <button id="btn-6" class="btn-calc">6</button>
+        <button id="btn-suma" class="btn-calc">+</button>
+        <button id="btn-1" class="btn-calc">1</button>
+        <button id="btn-2" class="btn-calc">2</button>
+        <button id="btn-3" class="btn-calc">3</button>
+        <button id="btn-resta" class="btn-calc">-</button>
+        <button id="btn-bot" class="btn-calc">.</button>
+        <button id="btn-0" class="btn-calc">0</button>
+        <button id="btn-sl" class="btn-calc">/</button>
+        <button id="btn-mult" class="btn-calc">*</button>
+        <div class="op">
+          <button id="btn-reset" class="btn-calc btn-inferior btn-azul">RESET</button>
+          <button id="btn-igual" class="btn-calc btn-inferior">=</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="script.js"></script>
+
+</body>
+
+</html>
